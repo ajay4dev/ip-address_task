@@ -6,7 +6,7 @@ const useragent = require("express-useragent"); // Import express-useragent
 
 const app = express();
 const PORT = 3000;
-const API_KEY = "06cc9f3863d44cf48d62f764594b1d5c";
+const API_KEY = process.env.IPGEOLOCATION;
 
 // Middleware to parse user-agent
 app.use(useragent.express());
